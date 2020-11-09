@@ -5,6 +5,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 gem 'rails', '6.0.3.4'
 
 gem 'bcrypt', '3.1.13'
+
+gem 'bootstrap-sass', '3.4.1'
 # Use Puma as the app server
 gem 'puma', '4.3.5'
 # Use SCSS for stylesheets
