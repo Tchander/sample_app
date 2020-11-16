@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataSource name="test.sqlite3">
+<dataSource name="development.sqlite3">
   <database-model serializer="dbm" dbms="SQLITE" family-id="SQLITE" format-version="4.19">
     <root id="1">
       <ServerVersion>3.31.1</ServerVersion>
@@ -115,7 +115,16 @@
       <DataType>datetime(6)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="32" parent="10">
+    <column id="32" parent="10" name="password_digest">
+      <Position>6</Position>
+      <DataType>varchar|0s</DataType>
+    </column>
+    <index id="33" parent="10" name="index_users_on_email">
+      <ColNames>email</ColNames>
+      <ColumnCollations></ColumnCollations>
+      <Unique>1</Unique>
+    </index>
+    <key id="34" parent="10">
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
