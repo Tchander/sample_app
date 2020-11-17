@@ -2,3 +2,8 @@ nookie:
   name: Nookie Schneider
   email: nookie.schneider@yandex.ru
   password_digest: <%= User.digest('password') %>
+
+ariel:
+  name: Ariel Heilung
+  email: ariel.heilung@gmail.com
+  password_digest: <%= User.digest('password') %>
