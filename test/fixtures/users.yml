@@ -2,6 +2,7 @@ nookie:
   name: Nookie Schneider
   email: nookie.schneider@yandex.ru
   password_digest: <%= User.digest('password') %>
+  admin: true
 
 ariel:
   name: Ariel Heilung
