@@ -1,0 +1,12 @@
+one:
+  follower: nookie
+  followed: lana
+two:
+  follower: nookie
+  followed: malory
+three:
+  follower: lana
+  followed: nookie
+four:
+  follower: archer
+  followed: nookies
